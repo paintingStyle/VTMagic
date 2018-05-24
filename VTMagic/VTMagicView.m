@@ -169,7 +169,10 @@ static const void *kVTMagicView = &kVTMagicView;
     CGFloat offset = CGRectGetHeight(rightFrame)/2;
     rightFrame.origin.x = _navigationView.frame.size.width - rightFrame.size.width;
     rightFrame.origin.y = CGRectGetMidY(_navigationView.bounds) - offset;
-    if (_againstStatusBar && _headerHidden) rightFrame.origin.y += 10;
+    // FIXME: 修复右侧按钮在iPhoneX上的位置
+    //if (_againstStatusBar && _headerHidden) rightFrame.origin.y +=10;
+    CGFloat statusbarMargin = (VTSTATUSBAR_HEIGHT *0.5f);
+    if (_againstStatusBar && _headerHidden) rightFrame.origin.y += statusbarMargin;
     _rightNavigatoinItem.frame = rightFrame;
 }
 

@@ -20,7 +20,9 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         if ([self respondsToSelector:@selector(edgesForExtendedLayout)]) {
-            self.edgesForExtendedLayout = UIRectEdgeNone;
+            // self.edgesForExtendedLayout = UIRectEdgeNone;
+            // FIXME：设置穿透效果
+            self.edgesForExtendedLayout = UIRectEdgeAll;
         } else if ([self respondsToSelector:@selector(setWantsFullScreenLayout:)]) {
             [self setValue:@YES forKey:@"wantsFullScreenLayout"];
         }
