@@ -6,6 +6,10 @@ VTMagic is a page container library for iOS, you can custom every page controlle
 
 ![preview image](Gif/magic.gif)
 
+# FIXME
+- 适配iPhoneX状态栏高度
+- 修复右侧按钮在iPhoneX上的位置
+- 启动页面穿透效果
 
 ## Communication
 - If you **found a bug**, *and can provide steps to reliably reproduce it*, open an issue.
