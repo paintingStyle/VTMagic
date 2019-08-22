@@ -4,19 +4,20 @@
 #
 #  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
 #  To see working Podspecs in the CocoaPods repo see https://github.com/CocoaPods/Specs/
-#
+#  fork  https://github.com/tianzhuo112/VTMagic.git
+#  pod trunk push VTMagic.podspec --allow-warnings --verbose
 
 Pod::Spec.new do |s|
     s.name       = 'VTMagic'
-		s.version    = '1.5.0' # 原版本 1.2.4
+		s.version    = '1.5.1' # 原版本 1.2.4
     s.license    = { :type => 'MIT' }
-    s.homepage   = 'https://github.com/tianzhuo112/VTMagic'
-    s.authors    = { 'tianzhuo' => 'tianzhuo112@163.com' }
+    s.homepage   = 'https://github.com/paintingStyle/VTMagic'
+    s.authors    = { 'paintingStyle' => 'sfdeveloper@163.com' }
     s.summary    = 'A page container for iOS.'
     s.description = <<-DESC
                         VTMagic is a page container library for iOS, it can manage many different pages. VTMagicView contains a menu bar and a content view, all pages are add to content view.
                      DESC
-    s.source     = { :git => 'https://github.com/tianzhuo112/VTMagic.git', :tag => s.version.to_s }
+    s.source     = { :git => 'https://github.com/paintingStyle/VTMagic.git', :tag => s.version.to_s }
 
     s.public_header_files = 'VTMagic/VTMagic.h'
     s.source_files = 'VTMagic/VTMagic.h'
