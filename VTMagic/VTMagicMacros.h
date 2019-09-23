@@ -43,12 +43,12 @@ blue:((float)(hexValue & 0xFF))/255.0 alpha:1.0]
 
 // 判断设备是否是iPhone
 #define kiPhoneDevice ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone)
-#define KiPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
 
-
+// 判断是否为iPhoneX或者以后的刘海屏设备
+#define IS_iPhoneX ([[UIScreen mainScreen] bounds].size.height >= 812.0f)
 // tabbar高度
-#define VTTABBAR_HEIGHT (49)
+#define VTTABBAR_HEIGHT (IS_iPhoneX ? 83.0f: 49.0f)
 // 状态栏高度
-#define VTSTATUSBAR_HEIGHT (KiPhoneX ? 44 : 20)
+#define VTSTATUSBAR_HEIGHT (IS_iPhoneX ? 44 : 20)
 
 #endif

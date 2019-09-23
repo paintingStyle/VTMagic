@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
     s.name       = 'VTMagic'
-		s.version    = '1.5.1' # 原版本 1.2.4
+		s.version    = '1.5.2' # 原版本 1.2.4
     s.license    = { :type => 'MIT' }
     s.homepage   = 'https://github.com/paintingStyle/VTMagic'
     s.authors    = { 'paintingStyle' => 'sfdeveloper@163.com' }
